@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suscripción - NAYELI Boutique</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Montserrat:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Montserrat", sans-serif;
+        background-color: #f3e0dc;
+      }
+      a.active {
+        color: #957698;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+
+  <body class="font-[Montserrat] text-gray-800 bg-white">
+    <!-- Encabezado -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+      <div class="text-center py-4 border-b border-[#e6d6e7] leading-tight">
+        <h1
+          class="text-3xl sm:text-4xl md:text-5xl font-[Playfair Display] text-[#957698]"
+        >
+          NAYELI
+        </h1>
+        <span class="text-base sm:text-lg tracking-widest text-gray-500"
+          >✨Boutique✨</span
+        >
+      </div>
+
+      <!-- Menú de navegación -->
+      <nav class="bg-[#e6d6e7]">
+        <ul
+          class="flex flex-wrap justify-center gap-4 sm:gap-8 py-3 text-xs sm:text-sm md:text-base font-medium"
+        >
+          <li>
+            <a href="proyecto.html" class="hover:text-[#B18C82]">Inicio</a>
+          </li>
+          <li>
+            <a href="categorias.html" class="hover:text-[#B18C82]"
+              >Categorías</a
+            >
+          </li>
+          <li>
+            <a href="productos.html" class="hover:text-[#B18C82]">Productos</a>
+          </li>
+          <li>
+            <a href="about.html" class="hover:text-[#B18C82]">Sobre Nosotros</a>
+          </li>
+          <li>
+            <a href="suscripcion.html" class="active hover:text-[#B18C82]"
+              >Suscripción</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Sección principal -->
+    <section class="py-16 px-6">
+      <div
+        class="max-w-lg mx-auto bg-[#f2ebf3] p-8 rounded-3xl shadow-lg space-y-6"
+      >
+        <!-- Título -->
+        <h2 class="text-3xl font-[Playfair Display] text-[#957698] text-center">
+          Suscríbete
+        </h2>
+
+        <!-- Descripción -->
+        <p class="text-gray-700 text-center">
+          Rellena el siguiente formulario y recibe descuentos exclusivos,
+          novedades y promociones personalizadas.
+        </p>
+
+        <!-- Formulario -->
+        <form class="space-y-5">
+          <div>
+            <label class="block text-left text-gray-700 font-medium"
+              >Nombre completo</label
+            >
+            <input
+              type="text"
+              placeholder="Tu nombre"
+              required
+              class="w-full mt-1 border rounded-lg p-3 focus:ring-[#B18C82] focus:border-[#B18C82]"
+            />
+          </div>
+
+          <div>
+            <label class="block text-left text-gray-700 font-medium"
+              >Correo electrónico</label
+            >
+            <input
+              type="email"
+              placeholder="tucorreo@ejemplo.com"
+              required
+              class="w-full mt-1 border rounded-lg p-3 focus:ring-[#B18C82] focus:border-[#B18C82]"
+            />
+          </div>
+
+          <div>
+            <label class="block text-left text-gray-700 font-medium"
+              >Edad</label
+            >
+            <input
+              type="number"
+              min="15"
+              max="99"
+              placeholder="Ej. 25"
+              class="w-full mt-1 border rounded-lg p-3 focus:ring-[#B18C82] focus:border-[#B18C82]"
+            />
+          </div>
+
+          <div>
+            <label class="block text-left text-gray-700 font-medium"
+              >Teléfono (opcional)</label
+            >
+            <input
+              type="tel"
+              placeholder="Ej. 555-123-4567"
+              class="w-full mt-1 border rounded-lg p-3 focus:ring-[#B18C82] focus:border-[#B18C82]"
+            />
+          </div>
+
+          <div>
+            <label class="block text-left text-gray-700 font-medium"
+              >Frecuencia de compra</label
+            >
+            <select
+              class="w-full mt-1 border rounded-lg p-3 focus:ring-[#B18C82] focus:border-[#B18C82]"
+            >
+              <option>Semanalmente</option>
+              <option>Mensualmente</option>
+              <option>Cada temporada</option>
+              <option>Solo en ocasiones especiales</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-left text-gray-700 font-medium"
+              >Tipo de productos favoritos</label
+            >
+            <div class="grid grid-cols-2 gap-2 mt-2 text-gray-600">
+              <label><input type="checkbox" /> Ropa</label>
+              <label><input type="checkbox" /> Accesorios</label>
+              <label><input type="checkbox" /> Fragancias</label>
+              <label><input type="checkbox" /> Decoración</label>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-left text-gray-700 font-medium"
+              >¿Deseas recibir alertas por WhatsApp?</label
+            >
+            <select
+              class="w-full mt-1 border rounded-lg p-3 focus:ring-[#B18C82] focus:border-[#B18C82]"
+            >
+              <option>Sí</option>
+              <option>No</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-left text-gray-700 font-medium"
+              >Comentarios o sugerencias</label
+            >
+            <textarea
+              rows="3"
+              placeholder="Escribe tus comentarios..."
+              class="w-full mt-1 border rounded-lg p-3 focus:ring-[#B18C82] focus:border-[#B18C82]"
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            class="w-full bg-[#957698] text-white py-3 rounded-full hover:bg-[#957698] transition"
+          >
+            Enviar suscripción
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer
+      class="bg-[#e6d6e7] text-center py-6 mt-10 text-xs sm:text-sm md:text-base"
+    >
+      <p>© 2025 NAYELI Boutique – Todos los derechos reservados</p>
+    </footer>
+  </body>
+</html>

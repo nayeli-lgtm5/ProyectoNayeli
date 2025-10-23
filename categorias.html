@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Categorías - LAMORE Boutique</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Montserrat:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      a.active {
+        color: #957698;
+        font-weight: 600;
+      }
+
+      /* Animación del modal */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: scale(0.95);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+      .modal {
+        animation: fadeIn 0.3s ease-out;
+      }
+    </style>
+  </head>
+
+  <body class="font-[Montserrat] text-gray-800 bg-white">
+    <!-- Encabezado -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+      <div class="text-center py-4 border-b border-[#e6d6e7] leading-tight">
+        <h1
+          class="text-3xl sm:text-4xl md:text-5xl font-[Playfair Display] text-[#957698]"
+        >
+          NAYELI
+        </h1>
+        <span class="text-base sm:text-lg tracking-widest text-gray-500"
+          >✨Boutique✨</span
+        >
+      </div>
+
+      <!-- Menú de navegación -->
+      <nav class="bg-[#e6d6e7]">
+        <ul
+          class="flex flex-wrap justify-center gap-4 sm:gap-8 py-3 text-xs sm:text-sm md:text-base font-medium"
+        >
+          <li>
+            <a href="proyecto.html" class="active hover:text-[#B18C82]"
+              >Inicio</a
+            >
+          </li>
+          <li>
+            <a href="categorias.html" class="hover:text-[#B18C82]"
+              >Categorías</a
+            >
+          </li>
+          <li>
+            <a href="productos.html" class="hover:text-[#B18C82]">Productos</a>
+          </li>
+          <li>
+            <a href="about.html" class="hover:text-[#B18C82]">Sobre Nosotros</a>
+          </li>
+          <li>
+            <a href="suscripcion.html" class="hover:text-[#B18C82]"
+              >Suscripción</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Sección de categorías -->
+    <section
+      class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-4 sm:px-6 py-12 sm:py-16"
+    >
+      <div
+        class="bg-[#b595b8] p-4 rounded-3xl text-center shadow-lg cursor-pointer hover:scale-105 transition-transform"
+        onclick="abrirModal('C:\\Users\\NAYELI HERNANDEZ\\Documents\\PHP\\Proyecto2\\img\\m.jpeg', 'Atuendos', 'Diseños exclusivos con un toque moderno y elegante.')"
+      >
+        <img
+          src="C:\Users\NAYELI HERNANDEZ\Documents\PHP\Proyecto2\img\m.jpeg"
+          class="w-full h-[250px] sm:h-[300px] object-cover rounded-2xl"
+        />
+        <h4 class="font-semibold text-lg mt-4 text-white">Atuendos</h4>
+        <p class="text-sm text-gray-100 mt-2">
+          Diseños exclusivos con un toque moderno y elegante.
+        </p>
+      </div>
+
+      <div
+        class="bg-[#b595b8] p-4 rounded-3xl text-center shadow-lg cursor-pointer hover:scale-105 transition-transform"
+        onclick="abrirModal('C:\\Users\\NAYELI HERNANDEZ\\Documents\\PHP\\Proyecto2\\img\\reloj.jpeg', 'Accesorios', 'Agrega brillo y clase con nuestros accesorios artesanales.')"
+      >
+        <img
+          src="C:\Users\NAYELI HERNANDEZ\Documents\PHP\Proyecto2\img\reloj.jpeg"
+          class="w-full h-[250px] sm:h-[300px] object-cover rounded-2xl"
+        />
+        <h4 class="font-semibold text-lg mt-4 text-white">Accesorios</h4>
+        <p class="text-sm text-gray-100 mt-2">
+          Agrega brillo y clase con nuestros accesorios.
+        </p>
+      </div>
+
+      <div
+        class="bg-[#b595b8] p-4 rounded-3xl text-center shadow-lg cursor-pointer hover:scale-105 transition-transform"
+        onclick="abrirModal('C:\\Users\\NAYELI HERNANDEZ\\Documents\\PHP\\Proyecto2\\img\\bolso bl.jpeg', 'Bolsos', 'Hermosos bolsos que transmiten calidez y estilo.')"
+      >
+        <img
+          src="C:\Users\NAYELI HERNANDEZ\Documents\PHP\Proyecto2\img\bolso bl.jpeg"
+          class="w-full h-[250px] sm:h-[300px] object-cover rounded-2xl"
+        />
+        <h4 class="font-semibold text-lg mt-4 text-white">Bolsos</h4>
+        <p class="text-sm text-gray-100 mt-2">
+          Hermosos bolsos que transmiten calidez y estilo.
+        </p>
+      </div>
+    </section>
+
+    <!-- Modal de imagen -->
+    <div
+      id="modal"
+      class="hidden fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4"
+    >
+      <div
+        class="modal bg-white rounded-3xl shadow-2xl w-full max-w-md sm:max-w-lg text-center relative"
+      >
+        <button
+          onclick="cerrarModal()"
+          class="absolute top-3 right-4 text-gray-600 text-2xl hover:text-[#b595b8]"
+        >
+          ✖
+        </button>
+        <img
+          id="modalImg"
+          src=""
+          class="w-full h-[250px] sm:h-[350px] object-cover rounded-t-3xl"
+        />
+        <div class="p-6">
+          <h3
+            id="modalTitulo"
+            class="text-xl sm:text-2xl font-[Playfair Display] text-[#b595b8] mb-2"
+          ></h3>
+          <p id="modalTexto" class="text-gray-700 text-sm sm:text-base"></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer class="bg-[#e6d6e7] text-center py-6 mt-10 text-sm sm:text-base">
+      <p>© 2025 NAYELI Boutique – Todos los derechos reservados</p>
+    </footer>
+
+    <script>
+      const modal = document.getElementById("modal");
+      const modalImg = document.getElementById("modalImg");
+      const modalTitulo = document.getElementById("modalTitulo");
+      const modalTexto = document.getElementById("modalTexto");
+
+      function abrirModal(src, titulo, texto) {
+        modalImg.src = src;
+        modalTitulo.textContent = titulo;
+        modalTexto.textContent = texto;
+        modal.classList.remove("hidden");
+      }
+
+      function cerrarModal() {
+        modal.classList.add("hidden");
+      }
+
+      // Cierra el modal si se hace clic fuera del contenido
+      window.addEventListener("click", (e) => {
+        if (e.target === modal) cerrarModal();
+      });
+    </script>
+  </body>
+</html>

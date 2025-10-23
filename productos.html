@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productos - Nayeli Boutique</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Montserrat:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      a.active {
+        color: #957698;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+
+  <body class="font-[Montserrat] text-gray-800 bg-white">
+    <!-- Encabezado -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+      <div class="text-center py-4 border-b border-[#e6d6e7] leading-tight">
+        <h1
+          class="text-3xl sm:text-4xl md:text-5xl font-[Playfair Display] text-[#957698]"
+        >
+          NAYELI
+        </h1>
+        <span class="text-base sm:text-lg tracking-widest text-gray-500"
+          >✨Boutique✨</span
+        >
+      </div>
+      <nav class="bg-[#e6d6e7]">
+        <ul
+          class="flex flex-wrap justify-center gap-4 sm:gap-8 py-3 text-xs sm:text-sm md:text-base font-medium"
+        >
+          <li>
+            <a href="proyecto.html" class="hover:text-[#B18C82]">Inicio</a>
+          </li>
+          <li>
+            <a href="categorias.html" class="hover:text-[#B18C82]"
+              >Categorías</a
+            >
+          </li>
+          <li>
+            <a href="productos.html" class="active text-[#B18C82] font-semibold"
+              >Productos</a
+            >
+          </li>
+          <li>
+            <a href="about.html" class="hover:text-[#B18C82]">Sobre Nosotros</a>
+          </li>
+          <li>
+            <a href="suscripcion.html" class="hover:text-[#B18C82]"
+              >Suscripción</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Sección de productos -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
+      <h2
+        class="text-3xl sm:text-4xl font-[Playfair Display] text-center text-[#957698] mb-10"
+      >
+        Productos más populares
+      </h2>
+
+      <!-- Catálogo de productos -->
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"
+      >
+        <!-- Producto 1 -->
+        <div
+          class="bg-[#f2ebf3] rounded-2xl shadow-lg p-5 text-center hover:scale-105 transition-transform"
+        >
+          <img
+            src="C:\Users\NAYELI HERNANDEZ\Documents\PHP\Proyecto2\img\WhatsApp Image 2025-10-21 at 9.44.58 AM.jpeg"
+            class="rounded-2xl h-[250px] w-full object-cover"
+          />
+          <h4 class="mt-4 text-[#b595b8] font-semibold">
+            Sudadera en tono morado
+          </h4>
+          <p class="text-[#c0a0c3] text-sm mt-2">
+            Ideal para invierno, confeccionada con telas suaves.
+          </p>
+        </div>
+
+        <!-- Producto 2 -->
+        <div
+          class="bg-[#f2ebf3] rounded-2xl shadow-lg p-5 text-center hover:scale-105 transition-transform"
+        >
+          <img
+            src="C:\Users\NAYELI HERNANDEZ\Documents\PHP\Proyecto2\img\SudaderaB.jpeg"
+            class="rounded-2xl h-[250px] w-full object-cover"
+          />
+          <h4 class="mt-4 text-[#b595b8] font-semibold">Sudadera Blanca</h4>
+          <p class="text-[#c0a0c3] text-sm mt-2">
+            Diseño moderno con letras en tono cafe.
+          </p>
+        </div>
+
+        <!-- Producto 3 -->
+        <div
+          class="bg-[#f2ebf3] rounded-2xl shadow-lg p-5 text-center hover:scale-105 transition-transform"
+        >
+          <img
+            src="C:\Users\NAYELI HERNANDEZ\Documents\PHP\Proyecto2\img\cos.jpeg"
+            class="rounded-2xl h-[250px] w-full object-cover"
+          />
+          <h4 class="mt-4 text-[#b595b8] font-semibold">Bolso con flores</h4>
+          <p class="text-[#c0a0c3] text-sm mt-2">
+            Bolso comodo con detalles de flores en tonos morados.
+          </p>
+        </div>
+
+        <!-- Producto 4 -->
+        <div
+          class="bg-[#f2ebf3] rounded-2xl shadow-lg p-5 text-center hover:scale-105 transition-transform"
+        >
+          <img
+            src="C:\Users\NAYELI HERNANDEZ\Documents\PHP\Proyecto2\img\reloj.jpeg"
+            class="rounded-2xl h-[250px] w-full object-cover"
+          />
+          <h4 class="mt-4 text-[#b595b8] font-semibold">
+            Reloj “Rose Gold Elegance”
+          </h4>
+          <p class="text-[#c0a0c3] text-sm mt-2">
+            Reloj elegante con correa color dorada y detalles brillantes.
+          </p>
+        </div>
+
+        <!-- Producto 5 -->
+        <div
+          class="bg-[#f2ebf3] rounded-2xl shadow-lg p-5 text-center hover:scale-105 transition-transform"
+        >
+          <img
+            src="C:\Users\NAYELI HERNANDEZ\Documents\PHP\Proyecto2\img\f.jpeg"
+            class="rounded-2xl h-[250px] w-full object-cover"
+          />
+          <h4 class="mt-4 text-[#b595b8] font-semibold">
+            Vestido en tono morado
+          </h4>
+          <p class="text-[#c0a0c3] text-sm mt-2">
+            Hermoso vestido corto que se ajusta a tu cuerpo.
+          </p>
+        </div>
+
+        <!-- Producto 6 -->
+        <div
+          class="bg-[#f2ebf3] rounded-2xl shadow-lg p-5 text-center hover:scale-105 transition-transform"
+        >
+          <img
+            src="C:\Users\NAYELI HERNANDEZ\Documents\PHP\Proyecto2\img\cadenita.jpeg"
+            class="rounded-2xl h-[250px] w-full object-cover"
+          />
+          <h4 class="mt-4 text-[#b595b8] font-semibold">Collar mariposa</h4>
+          <p class="text-[#c0a0c3] text-sm mt-2">
+            Collar de dos piezas con detalles brillosos.
+          </p>
+        </div>
+
+        <!-- Producto 7 -->
+        <div
+          class="bg-[#f2ebf3] rounded-2xl shadow-lg p-5 text-center hover:scale-105 transition-transform"
+        >
+          <img
+            src="C:\Users\NAYELI HERNANDEZ\Documents\PHP\Proyecto2\img\bm2.jpeg"
+            class="rounded-2xl h-[250px] w-full object-cover"
+          />
+          <h4 class="mt-4 text-[#b595b8] font-semibold">
+            Blusa en tono morado
+          </h4>
+          <p class="text-[#c0a0c3] text-sm mt-2">Blusa casual y comoda.</p>
+        </div>
+
+        <!-- Producto 8 -->
+        <div
+          class="bg-[#f2ebf3] rounded-2xl shadow-lg p-5 text-center hover:scale-105 transition-transform"
+        >
+          <img
+            src="C:\Users\NAYELI HERNANDEZ\Documents\PHP\Proyecto2\img\WhatsApp Image 2025-10-21 at 9.45.04 AM (1).jpeg"
+            class="rounded-2xl h-[250px] w-full object-cover"
+          />
+          <h4 class="mt-4 text-[#b595b8] font-semibold">Sudadera blanca</h4>
+          <p class="text-[#c0a0c3] text-sm mt-2">
+            Diseño moderno con letras en color negra.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer
+      class="bg-[#e6d6e7] text-center py-6 mt-10 text-xs sm:text-sm md:text-base"
+    >
+      <p>© 2025 NAYELI Boutique – Todos los derechos reservados</p>
+    </footer>
+  </body>
+</html>
